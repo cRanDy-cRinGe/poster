@@ -99,11 +99,7 @@ body.light-theme .overlay-content button:hover {
 }
 
 /* Показувати гамбургер тільки на мобільних екранах */
-@media (max-width: 480px) {
-    .hamburger {
-        display: block;
-    }
-}
+
 
 /* Обгортка та хедер */
 .header-wrapper {
@@ -135,7 +131,15 @@ body.light-theme .overlay-content button:hover {
 .header h1 {
     margin: 0;
 }
-
+@media (max-width: 480px) {
+    .hamburger {
+        display: block;
+        top: 3vh;
+    }
+    .header-wrapper {
+        left: 50%;
+    }
+}
 /* Контейнер займає всю висоту */
 .container {
     display: flex;

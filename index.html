@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ChatGPT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header-wrapper">
+    <div class="header">
+        <h1>NeuroEon</h1>
+    </div>
+</div>
+<div class="container">
+    <div class="sidebar">
+        <h2>Navigation</h2>
+        <div class="nav-buttons">
+            <button class="nav-btn">Home</button>
+            <button class="nav-btn">Settings</button>
+            <button class="nav-btn">Help</button>
+        </div>
+    </div>
+    <div class="main">
+        <div class="messages" id="messagesContainer"></div>
+        <div class="input-area">
+            <input type="text" id="messageInput" placeholder="Type a message..." />
+            <button id="sendButton" class="send-btn">Send</button>
+        </div>
+    </div>
+</div>
+
+<!-- Settings Overlay -->
+<div class="overlay" id="settingsOverlay">
+    <div class="overlay-content">
+        <h2>Settings</h2>
+        <div class="settings-options">
+            <button id="toggleThemeButton" class="theme-toggle-btn">Toggle Theme</button>
+        </div>
+        <button id="closeSettingsButton" class="close-btn">Close</button>
+    </div>
+</div>
+
+<!-- Help Overlay -->
+<div class="overlay" id="helpOverlay">
+    <div class="overlay-content">
+        <h2>Help</h2>
+        <ul>
+            <li>Email: support@example.com</li>
+            <li>Phone: 123-456-7890</li>
+            <li>Telegram: @support</li>
+        </ul>
+        <button id="closeHelpButton" class="close-btn">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
